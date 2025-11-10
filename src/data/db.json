@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "location": "Abuja",
+      "community": "Abuja Community",
+      "lat": 9.0820,
+      "lng": 8.6753,
+      "bio": "Tech enthusiast and community organizer",
+      "friends": [2, 3],
+      "joinedDate": "2025-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "location": "Lagos",
+      "community": "Lagos Local Connect",
+      "lat": 9.0765,
+      "lng": 8.6700,
+      "bio": "Love connecting with neighbors",
+      "friends": [1, 3],
+      "joinedDate": "2025-02-10"
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "email": "mike@example.com",
+      "location": "Kano",
+      "community": "Kano Network",
+      "lat": 9.0850,
+      "lng": 8.6800,
+      "bio": "Community builder and volunteer",
+      "friends": [1, 2],
+      "joinedDate": "2025-01-20"
+    }
+  ],
+  "communities": [
+    {
+      "id": 1,
+      "name": "Abuja Community",
+      "description": "Connect with people in Abuja and surrounding areas",
+      "location": "Abuja",
+      "category": "General",
+      "members": 25,
+      "createdDate": "2025-01-01",
+      "adminId": 1
+    },
+    {
+      "id": 2,
+      "name": "Lagos Local Connect",
+      "description": "Building connections in Lagos communities",
+      "location": "Lagos",
+      "category": "Social",
+      "members": 42,
+      "createdDate": "2025-01-05",
+      "adminId": 2
+    },
+    {
+      "id": 3,
+      "name": "Kano Network",
+      "description": "Network for Kano residents and families",
+      "location": "Kano",
+      "category": "Family",
+      "members": 18,
+      "createdDate": "2025-01-10",
+      "adminId": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "userName": "John Doe",
+      "communityId": 1,
+      "content": "Welcome to our local community!",
+      "timestamp": "2025-10-18T08:30:00Z",
+      "likes": 12,
+      "comments": []
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "userName": "Jane Smith",
+      "communityId": 2,
+      "content": "Anyone interested in a community meetup this weekend?",
+      "timestamp": "2025-10-18T05:45:00Z",
+      "likes": 8,
+      "comments": []
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "userName": "Mike Johnson",
+      "communityId": 3,
+      "content": "Great to see our community growing!",
+      "timestamp": "2025-10-17T14:20:00Z",
+      "likes": 15,
+      "comments": []
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "senderId": 1,
+      "senderName": "John Doe",
+      "receiverId": 2,
+      "receiverName": "Jane Smith",
+      "text": "Hello! How are you?",
+      "timestamp": "2025-10-18T10:30:00Z",
+      "read": true
+    },
+    {
+      "id": 2,
+      "senderId": 2,
+      "senderName": "Jane Smith",
+      "receiverId": 1,
+      "receiverName": "John Doe",
+      "text": "Hi John! I'm doing great, thanks!",
+      "timestamp": "2025-10-18T10:32:00Z",
+      "read": true
+    },
+    {
+      "id": 3,
+      "senderId": 1,
+      "senderName": "John Doe",
+      "receiverId": 2,
+      "receiverName": "Jane Smith",
+      "text": "Are you coming to the community meeting tomorrow?",
+      "timestamp": "2025-10-18T10:33:00Z",
+      "read": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "friend_request",
+      "message": "Mike Johnson sent you a friend request",
+      "timestamp": "2025-10-18T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "type": "new_member",
+      "message": "New member joined Abuja Community",
+      "timestamp": "2025-10-18T08:00:00Z",
+      "read": false
+    }
+  ]
+}
