@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Badge, Button, Form, InputGroup, Modal } from 'react-bootstrap';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { FaUsers, FaMapMarkerAlt, FaComment, FaHeart, FaShare, FaCalendarAlt, FaUserPlus, FaSearch, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
@@ -44,7 +44,6 @@ const createCustomIcon = (color, isSelected = false) => {
   });
 };
 
-// Component to handle map view changes
 const MapViewController = ({ center, zoom }) => {
   const map = useMap();
 
@@ -58,7 +57,6 @@ const MapViewController = ({ center, zoom }) => {
 };
 
 const DashboardPage = () => {
-  // Sample user locations with more details
   const [allUsers] = useState([
     {
       id: 1,
@@ -166,7 +164,6 @@ const DashboardPage = () => {
     { id: 3, text: 'Upcoming event: Community Meetup', time: '2 hours ago', type: 'warning' },
   ];
 
-  // Handle search
   const handleSearch = (query) => {
     setSearchQuery(query);
     if (query.trim() === '') {
@@ -182,7 +179,6 @@ const DashboardPage = () => {
     }
   };
 
-  // Track user location on map
   const trackUserLocation = (user) => {
     setSelectedUser(user);
     setMapCenter([user.lat, user.lng]);
@@ -203,7 +199,6 @@ const DashboardPage = () => {
     setShowUserModal(true);
   };
 
-  // Clear search and tracking
   const clearSearch = () => {
     setSearchQuery('');
     setFilteredUsers(allUsers);
